@@ -1,4 +1,4 @@
-# `redis.sh`
+# redis.sh
 
 Pure Bash client library for Redis.
 
@@ -31,7 +31,7 @@ Bash exposes a file-like interface for socket connections through the [`/dev/tcp
 
 This is a Bashism; `redis.sh` is not compatible with stricter shells such as `ash`. A POSIX-compliant implementation would rely on external utilities such as `socat` or `nc` to establish socket connections.
 
-## Why use `redis.sh`?
+## Why use redis.sh?
 
 Here are some possible use cases:
 
@@ -57,4 +57,4 @@ or simply:
 
 ```
 $ bats test
-``
+```
