@@ -42,3 +42,19 @@ Here are some possible use cases:
 ## Contributing
 
 `redis.sh` is still missing a lot of critical functionality (see [open issues](https://github.com/benwebber/redis.sh/issues/)). Pull requests are appreciated.
+
+### Testing
+
+We are using [Bats](https://github.com/sstephenson/bats/) as a testing framework. Refer to the Bats documentation for installation instructions.
+
+Once you have Bats installed, run tests using:
+
+```
+$ make test
+```
+
+or simply:
+
+```
+$ bats test
+``
