@@ -14,7 +14,7 @@ Pure Bash client library for Redis.
 3. Connect to a Redis instance and run your commands.
 
     ```sh
-    redis::redis INFO
+    redis::info
     ```
 
 By default, `redis.sh` will attempt to connect on `localhost:6379`. You can override that by setting `REDIS_HOSTNAME` and `REDIS_PORT`.
@@ -22,7 +22,7 @@ By default, `redis.sh` will attempt to connect on `localhost:6379`. You can over
 ```sh
 REDIS_HOSTNAME='redis.example.org'
 REDIS_PORT=6380
-redis::redis INFO
+redis::info
 ```
 
 ## How it works
