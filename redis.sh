@@ -884,22 +884,22 @@ redis::evalsha() {
 
 # Check existence of scripts in the script cache.
 redis::script_exists() {
-  redis::redis 'SCRIPT_EXISTS' "${@:1}"
+  redis::redis 'SCRIPT EXISTS' "${@:1}"
 }
 
 # Remove all the scripts from the script cache.
 redis::script_flush() {
-  redis::redis 'SCRIPT_FLUSH'
+  redis::redis 'SCRIPT FLUSH'
 }
 
 # Kill the script currently in execution.
 redis::script_kill() {
-  redis::redis 'SCRIPT_KILL'
+  redis::redis 'SCRIPT KILL'
 }
 
 # Load the specified Lua script into the script cache.
 redis::script_load() {
-  redis::redis 'SCRIPT_LOAD' "${@:1}"
+  redis::redis 'SCRIPT LOAD' "${@:1}"
 }
 
 #-------------------------------------------------------------------------------
@@ -947,47 +947,47 @@ redis::bgsave() {
 
 # Get the current connection name
 redis::client_getname() {
-  redis::redis 'CLIENT_GETNAME'
+  redis::redis 'CLIENT GETNAME'
 }
 
 # Kill the connection of a client
 redis::client_kill() {
-  redis::redis 'CLIENT_KILL' "${@:1}"
+  redis::redis 'CLIENT KILL' "${@:1}"
 }
 
 # Get the list of client connections
 redis::client_list() {
-  redis::redis 'CLIENT_LIST'
+  redis::redis 'CLIENT LIST'
 }
 
 # Stop processing commands from clients for some time
 redis::client_pause() {
-  redis::redis 'CLIENT_PAUSE' "${@:1}"
+  redis::redis 'CLIENT PAUSE' "${@:1}"
 }
 
 # Set the current connection name
 redis::client_setname() {
-  redis::redis 'CLIENT_SETNAME' "${@:1}"
+  redis::redis 'CLIENT SETNAME' "${@:1}"
 }
 
 # Get the value of a configuration parameter
 redis::config_get() {
-  redis::redis 'CONFIG_GET' "${@:1}"
+  redis::redis 'CONFIG GET' "${@:1}"
 }
 
 # Reset the stats returned by INFO
 redis::config_resetstat() {
-  redis::redis 'CONFIG_RESETSTAT'
+  redis::redis 'CONFIG RESETSTAT'
 }
 
 # Rewrite the configuration file with the in memory configuration
 redis::config_rewrite() {
-  redis::redis 'CONFIG_REWRITE'
+  redis::redis 'CONFIG REWRITE'
 }
 
 # Set a configuration parameter to the given value
 redis::config_set() {
-  redis::redis 'CONFIG_SET' "${@:1}"
+  redis::redis 'CONFIG SET' "${@:1}"
 }
 
 # Return the number of keys in the selected database
@@ -997,12 +997,12 @@ redis::dbsize() {
 
 # Get debugging information about a key
 redis::debug_object() {
-  redis::redis 'DEBUG_OBJECT' "${@:1}"
+  redis::redis 'DEBUG OBJECT' "${@:1}"
 }
 
 # Make the server crash
 redis::debug_segfault() {
-  redis::redis 'DEBUG_SEGFAULT'
+  redis::redis 'DEBUG SEGFAULT'
 }
 
 # Remove all keys from all databases

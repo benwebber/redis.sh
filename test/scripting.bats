@@ -15,22 +15,22 @@ load test_helper
   fail 'test not defined yet'
 }
 
-@test 'SCRIPT_EXISTS' {
+@test 'SCRIPT EXISTS' {
   run redis::script_exists
   fail 'test not defined yet'
 }
 
-@test 'SCRIPT_FLUSH' {
+@test 'SCRIPT FLUSH' {
   run redis::script_flush
   fail 'test not defined yet'
 }
 
-@test 'SCRIPT_KILL' {
+@test 'SCRIPT KILL' {
   run redis::script_kill
   fail 'test not defined yet'
 }
 
-@test 'SCRIPT_LOAD' {
+@test 'SCRIPT LOAD' {
   run redis::script_load
   fail 'test not defined yet'
 }

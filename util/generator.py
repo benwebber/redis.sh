@@ -27,11 +27,11 @@ GROUPS = [
 
 TEMPLATES = {
     'method': """# {{ summary }}
-redis::{{ command|lower }}() {
+redis::{{ method }}() {
   redis::redis '{{ command }}'{% if has_args %} "${@:1}"{% endif %}
 }""",
     'test': """@test '{{ command }}' {
-  run redis::{{ command|lower }}
+  run redis::{{ method }}
   fail 'test not defined yet'
 }""",
 }
@@ -73,7 +73,8 @@ def main(argv=None):
     template = jinja2.Template(TEMPLATES[args.type])
     for k, v in iter(sorted(commands.iteritems())):
         params = {
-            'command': k.replace(' ', '_'),
+            'command': k,
+            'method': k.lower().replace(' ', '_'),
             'summary': v['summary'],
             'group': v['group'],
             'has_args': ('arguments' in v),

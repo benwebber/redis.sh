@@ -15,47 +15,47 @@ load test_helper
   fail 'test not defined yet'
 }
 
-@test 'CLIENT_GETNAME' {
+@test 'CLIENT GETNAME' {
   run redis::client_getname
   fail 'test not defined yet'
 }
 
-@test 'CLIENT_KILL' {
+@test 'CLIENT KILL' {
   run redis::client_kill
   fail 'test not defined yet'
 }
 
-@test 'CLIENT_LIST' {
+@test 'CLIENT LIST' {
   run redis::client_list
   fail 'test not defined yet'
 }
 
-@test 'CLIENT_PAUSE' {
+@test 'CLIENT PAUSE' {
   run redis::client_pause
   fail 'test not defined yet'
 }
 
-@test 'CLIENT_SETNAME' {
+@test 'CLIENT SETNAME' {
   run redis::client_setname
   fail 'test not defined yet'
 }
 
-@test 'CONFIG_GET' {
+@test 'CONFIG GET' {
   run redis::config_get
   fail 'test not defined yet'
 }
 
-@test 'CONFIG_RESETSTAT' {
+@test 'CONFIG RESETSTAT' {
   run redis::config_resetstat
   fail 'test not defined yet'
 }
 
-@test 'CONFIG_REWRITE' {
+@test 'CONFIG REWRITE' {
   run redis::config_rewrite
   fail 'test not defined yet'
 }
 
-@test 'CONFIG_SET' {
+@test 'CONFIG SET' {
   run redis::config_set
   fail 'test not defined yet'
 }
@@ -65,12 +65,12 @@ load test_helper
   fail 'test not defined yet'
 }
 
-@test 'DEBUG_OBJECT' {
+@test 'DEBUG OBJECT' {
   run redis::debug_object
   fail 'test not defined yet'
 }
 
-@test 'DEBUG_SEGFAULT' {
+@test 'DEBUG SEGFAULT' {
   run redis::debug_segfault
   fail 'test not defined yet'
 }
